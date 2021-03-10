@@ -20,3 +20,12 @@ class AlienInvasion:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     sys.exit()
+
+            # Make the most recently drawn screen visible
+            pygame.display.flip()
+
+
+if __name__ == '__main__':
+    # Make a game instance, and run the game
+    ai = AlienInvasion()
+    ai.run_game()
